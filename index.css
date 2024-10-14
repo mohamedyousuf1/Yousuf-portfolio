@@ -611,3 +611,36 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+/* --------------------------------------- */
+/* ----- Skills Section ----- */
+/* --------------------------------------- */
+
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjusts space between columns */
+}
+
+.skills__box {
+    padding: var(--gutter-small);
+    border-radius: 8px;
+    box-shadow: none; /* Remove shadow */
+}
+
+.skills__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills__list li {
+    padding: 0.5rem 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: 1fr; /* Switch to single column on small screens */
+    }
+}
